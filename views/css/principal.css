@@ -1,0 +1,149 @@
+.sombra{
+    filter: drop-shadow(0.3vw 0.1vw 0.4vw rgb(163, 163, 163));
+}
+.h1size{
+    color: rgb(15, 15, 15);
+    font-family: 'Bebas Neue', sans-serif;
+}
+.inicioMenu{
+    position: absolute;
+    bottom: 20px;
+    background-color: black;
+    border-radius: 0.7vw;
+    text-align: center;
+    color: white;
+    text-decoration: none;   
+    border: 0;
+}
+.informacionC{
+    background-color: black;
+    color: white;
+}
+.fontTitle{
+    font-family: 'Bebas Neue', sans-serif;
+}
+.inicioMenu:hover{
+    background-color: rgb(65, 65, 65);
+     
+}
+.enlacesMenu{
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+    padding: 4px;
+}
+.enlacesMenu:hover{
+    background-color: rgb(194, 194, 194);
+    color: black;
+}
+.enlacesMenu:active{
+    text-decoration: underline;
+}
+.botones{
+    background-color: rgb(161, 161, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    font-size: 1vw;
+}
+.botonicono{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    font-size: 30px;
+}
+.botones>a:not(.inicio){
+    color: rgb(53, 53, 53);
+    background-color: rgb(161, 161, 161);
+    text-decoration: none;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    padding-left: 1vw;
+}
+.botones>a:not(.inicio):hover{
+    color: rgb(36, 36, 36);
+    text-decoration: underline;
+}
+.inicio{
+    background-color: black;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    border-radius: 0.7vw;
+    border: 0;
+    width: 7vw;
+    text-align: center;
+    color: white;
+    text-decoration: none;   
+}
+.btn-dark{
+    background-color: black;
+    border: black;
+}
+.inicio:hover{
+    background-color: rgb(44, 44, 44);
+    transition: 0.4s;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+i{
+    color: black;
+}
+.hueco{
+    height: 6vw;
+}
+
+.imagenHombre{
+    background-image: url('https://oleainfluenseller.com/cdn/shop/products/product-image-1423389228.jpg');
+    background-position: top;
+}
+.imagenMujer{
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/gymsharkwomen-121234369-2677266559269339-5036545344300294704-n-1605517562.jpg');
+    background-position: top;
+}
+.imagenAccesorio{
+    background-image: url('https://m.media-amazon.com/images/I/71GeLPOOAIL.jpg');
+    background-position: center;
+}
+div[class*="imagen"]{
+    height: 30vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button[class*="botonesTipos"]{
+    position: absolute;
+    bottom: 1.5vw;
+    left: 1.5vw;
+    border: 0;
+
+}
+.linkfooter{
+    color: rgb(56, 56, 56);
+}
+.linkfooter:hover{
+    color: black;
+}
+.linkfooter:active{
+    text-decoration: underline;
+}
+.botonesTipos{
+    background-color: white;
+}
+.botonesTipos4{
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+.textoFooter{
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+.ifooter{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+footer{
+    background-color: rgb(177, 177, 177);
+}

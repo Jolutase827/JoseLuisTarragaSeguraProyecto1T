@@ -1,0 +1,76 @@
+.sombra{
+    filter: drop-shadow(0.3vw 0.1vw 0.4vw rgb(163, 163, 163));
+}
+.h1size{
+    color: rgb(15, 15, 15);
+    font-family: 'Bebas Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+header{
+    background-color: white;
+}
+main{
+    background-color: white;
+    border-radius: 20px;
+}
+footer{
+    background-color: white;
+}
+.contenedorDerecha{
+    background-color: gray;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+}
+.contenedorabajo{
+    background-color: gray;
+    color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+.linkfooter{
+    color: rgb(56, 56, 56);
+}
+.linkfooter:hover{
+    color: black;
+}
+.linkfooter:active{
+    text-decoration: underline;
+}
+.inputBonito{
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: gray;
+    padding-left: 30px;
+} 
+.olvidado{
+    color: gray;
+}
+.botonRegistro{
+    font-size: 22px;
+    background-color: black;
+    border: 0;
+    color: white;
+    border-radius: 10px;
+}
+.botonRegistro:hover{
+    transition: 0.2s;
+    background-color: rgb(73, 73, 73);
+}
+.enlaceRegistro{
+    color: rgb(58, 58, 58);
+}
+.enlaceRegistro:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+.input-container i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+  }
