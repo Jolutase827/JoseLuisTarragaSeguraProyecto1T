@@ -28,12 +28,10 @@
             </div>
             <div class="col-1 col-lg-4 ">
             </div>
-            <div class="col-3 botones sombra d-none d-lg-flex">
-                <a href="principal.php">Tienda</a>
-                <a href="#informacion">Información</a>
-                <a href="registrarse.php">Registrarse</a>
-                <button id="inicioSesion" class="inicio col-4 ">Iniciar Sesión</button>
-            </div>
+            <?php if($iniciado)
+                  include "../views/barrainiciosesion.html";
+                else
+                  include "../views/barraIniciosinsesion.html";?>
             <button class="d-inline col-2 d-lg-none botonicono sombra" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -42,10 +40,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body d-flex flex-column">
-                  <a href="" class="w-100 enlacesMenu mb-2">Tienda</a>
-                  <a href="#informacion" class="w-100 enlacesMenu mb-2">Información</a>
-                  <a href="registrarse.php" class="w-100 enlacesMenu mb-2">Registrarse</a>
-                  <button  id="inicioSesion2" class="inicioMenu w-75">Iniciar Sesión</button>
+                  <a href="" class="w-100 enlacesMenu mb-2"><i class="bi bi-shop-window"></i> Tienda</a>
+                  <a href="#informacion" class="w-100 enlacesMenu mb-2"><i class="bi bi-info-circle"></i> Información</a>
+                  <?php if($iniciado)
+                  include "../views/contentoffcanvainiciado.html";
+                else
+                  include "../views/contentoffcanvasininiciado.html";?>
                 </div>
             </div>
         </div>
@@ -53,49 +53,7 @@
 
     
   <!-- DIALOG -->
-    <dialog id="favDialog" class="dialog">
-      <div class="col-12 d-flex justify-content-end">
-        <button id="close" class="botoncross mt-2 me-3"><i class="bi bi-x-lg cross"></i></button>
-      </div>
-      <div class="row container">
-          <div class="col-5"></div>
-          <img src="https://cdn-icons-png.flaticon.com/512/6016/6016314.png" alt="Foto logo" class="col-2 h-100 sombra">
-          <div class="col-5"></div>
-      </div>
-      <div class="row container mt-2">
-        <div class="col-1"></div>
-        <h1 class="col-8">Inicio sesión</h1>
-      </div>
-      <form action="" method="post">
-        <!-- <div class="row container mt-2">
-          <div class="col-1"></div>
-          <label  class="col-11">Correo electronico:</label>
-        </div>-->
-        <div class="row container mt-4">
-          <div class="col-1"></div>
-          <input id="nombreCorreo" type="text" class="inputBonito w-75 col-11" placeholder="Correo electronico">
-        </div>
-        <!--<div class="row container mt-4">
-          <div class="col-1"></div>
-          <label  class="col-11">Contraseña:</label>
-        </div>-->
-        <div class="row container mt-3">
-          <div class="col-1"></div>
-          <input id="contraseña" type="text" class="inputBonito w-75 col-11" placeholder="Contraseña">
-        </div>
-        <div class="row container mt-4">
-          <div class="col-1"></div>
-          <input type="submit" value="Iniciar sesión" class="col-11 w-75 me-2 botonInicioSesion">
-        </div>
-      </form>
-      <div class="row container mt-2">
-        <p class="col-12 text-center olvidado">¿Has olvidado tu contraseña?<a href="" class="enlaceClicaaquí"> Clica aquí.</a></p>
-      </div>
-      <div class="row container mt-3 mb-4">
-        <div class="col-1"></div>
-        <p class="col-11 ">¿No tienes cuenta?<strong><a href="registrarse.php" class="enlaceRegistro"> Registráte.</a></strong></p>
-      </div>
-    </dialog>
+    <?php if(!$iniciado) include "../views/dialogInicioSesion.html" ?>
 
 
 
@@ -173,77 +131,14 @@
 
     <br>
     <br>
-
-
-
     <!-- FOOTER -->
-    <footer class="container-fluid">
-        <footer class="py-5">
-          <div class="row">
-            <div class="col-4 col-md-1 mb-3">
-            </div>
-      
-            <div class="col-6 col-md-2 mb-3">
-                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/6016/6016314.png" alt="Foto logo" class="col-3  sombra"></a>
-              <ul class="nav flex-column ">
-                <li class="nav-item mb-2"><a href="principal.php" class="nav-link p-0 linkfooter">Tienda</a></li>
-                <li class="nav-item mb-2"><a href="#informacion" class="nav-link p-0 linkfooter">Información</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 linkfooter">Ropa</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 linkfooter">Accesorios</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-6 col-md-2 mb-3">
-            </div>
-      
-            <div class="col-md-5 offset-md-1 mb-3">
-              <form>
-                <h5>Busca productos</h5>
-                <p>Encuentra cual es tu producto perfecto.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Escribe el nombre">
-                  <button class="btn btn-dark" type="button">Buscar</button>
-                </div>
-              </form>
-            </div>
-          </div>
-      
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p class="textoFooter">© 2023 HBASICSPORT-JOSE LUIS TARRAGA SEGURA-2DAW</p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram ifooter"></i></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook ifooter"></i></li>
-              <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter-x ifooter"></i></a></li>
-            </ul>
-          </div>
-        </footer>
-      </div>
+    <?php include "../views/footer.html"; ?>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-      
-      (function () {
-      const iniciosesion = document.getElementById("inicioSesion");
-      const inicioSesion2 = document.getElementById("inicioSesion2");
-      const cancelButton = document.getElementById("close");
-      const favDialog = document.getElementById("favDialog");
-      if(sessionStorage.getItem("iniciosesion")=="true"){
-        favDialog.showModal();
-        sessionStorage.setItem("iniciosesion","false");
-      }
-      inicioSesion2.addEventListener("click", function () {
-        favDialog.showModal();
-      });
-      
-      iniciosesion.addEventListener("click", function () {
-        favDialog.showModal();
-      });
-  
-      // Form cancel button closes the dialog box
-      cancelButton.addEventListener("click", function () {
-        favDialog.close();
-      });
-    })();
-    </script>
+    <?php if(!$iniciado) echo "<script src='../views/js/iniciosesionAnimations.js'></script>";?>
+    <?php if(!$iniciado) echo "<script src='../views/js/validatelogin.js'></script>";?>
 </body>
 </html>

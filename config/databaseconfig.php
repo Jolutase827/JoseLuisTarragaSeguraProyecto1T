@@ -1,6 +1,6 @@
 <?php
 const BASE='hbasicsport';
-const HOST='localhost';
+const HOST='localhost:3307';
 const USUARIO ='root';
 const PASS='';
 const OPCIONES = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET

@@ -9,15 +9,15 @@
         $errorDni = $cliente->existDni($base->link);
         $errorEmail = $cliente->existEmail($base->link);
         if($errorEmail && $errorDni){
-            header("HTTP/1.1 400 Bad Request");
+            header("HTTP/1.1 200 OK");
             echo json_encode("1");
             exit();
         }else if($errorDni){
-            header("HTTP/1.1 400 Bad Request");
+            header("HTTP/1.1 200 OK");
             echo json_encode("2");
             exit();
         }else if($errorEmail){
-            header("HTTP/1.1 400 Bad Request");
+            header("HTTP/1.1 200 OK");
             echo json_encode("3");
             exit();
         }
@@ -40,7 +40,7 @@
                 $cliente = $aux->getByEmail($base->link);
             }
             if($cliente==null){
-                header("HTTP/1.1 400 OK");
+                header("HTTP/1.1 200 OK");
                 echo json_encode("notExistUser");
                 exit();
             }
@@ -49,7 +49,7 @@
                 echo json_encode($cliente);
                 exit();
             }else{
-                header("HTTP/1.1 400 OK");
+                header("HTTP/1.1 200 OK");
                 echo json_encode("pwdIncorrect");
                 exit();
             }

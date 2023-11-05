@@ -21,7 +21,7 @@
         <div class="row d-flex align-items-center">
             <div class="col-7 col-lg-3 h-25 d-flex align-items-center justify-content-center">
                 <img src="https://cdn-icons-png.flaticon.com/512/6016/6016314.png" alt="Foto logo" class="col-3 h-100 sombra">
-                <a href="principal.html"><h1 class="col-2 h1size mt-2 sombra">HBASICSPORT</h1></a>
+                <a href="inicio.php"><h1 class="col-2 h1size mt-2 sombra">HBASICSPORT</h1></a>
             </div>
     </header>
     <br>
@@ -33,19 +33,27 @@
                 <form action="">
                     <div class="input-container row position-relative mt-4 ms-5">
                         <i class="fas fa-user"></i>
-                        <input id="nombre" type="text" class="inputBonito w-75" placeholder="Nombre">
+                        <input id="name" type="text" class="inputBonito w-75" placeholder="Nombre*" required/>
                     </div>
                     <div class="input-container row position-relative mt-3 ms-5">
                         <i class="fas fa-user"></i>
-                        <input id="apellido" type="text" class="inputBonito w-75 " placeholder="Apellido">
+                        <input id="lastname" type="text" class="inputBonito w-75 " placeholder="Apellido">
+                    </div>
+                    <div class="input-container row position-relative mt-3 ms-5">
+                        <i class="bi bi-house-fill"></i>
+                        <input id="direccion" type="text" class="inputBonito w-75 " placeholder="Direccion*" required/>
                     </div>
                     <div class="input-container row position-relative mt-3 ms-5">
                         <i class="fas fa-envelope"></i>
-                        <input id="nombreCorreo" type="email" class="inputBonito w-75 " placeholder="Correo electrónico">
+                        <input id="email" type="email" class="inputBonito w-75 " placeholder="Correo electrónico*" required/>
                     </div>
-                    <div class="input-container row position-relative mt-3 ms-5">
+                    <div class="input-container row position-relative mt-3 ms-5" >
                         <i class="fas fa-lock"></i>
-                        <input id="nombreCorreo" type="password" class="inputBonito w-75 " placeholder="Contraseña">
+                        <input id="pwd" type="password" class="inputBonito w-75 " placeholder="Contraseña*  " required/>
+                    </div>
+                    <div class="input-container row position-relative mt-3 ms-5" >
+                        <i class="fas fa-lock"></i>
+                        <input id="rpwd" type="password" class="inputBonito w-75 " placeholder="Repite la contraseña*  " required/>
                     </div>
                     <div class="row container mt-4 ms-5">
                         <input type="submit" value="Registrate" class="col-11 w-75 me-2 botonRegistro">
@@ -56,7 +64,7 @@
                         <a href="" class="enlaceRegistro"> Clica aquí.</a></p>
                     </div>
 
-                    <p class="mt-3 mb-4 ms-5">¿Ya tienes cuenta?<strong><a href="principal.html" id="inicioSesion" class="enlaceRegistro"> Inicia sesión.</a></strong></p>
+                    <p class="mt-3 mb-4 ms-5">¿Ya tienes cuenta?<strong><a href="inicio.php" id="inicioSesion" class="enlaceRegistro"> Inicia sesión.</a></strong></p>
                     <div class="row d-flex d-md-none contenedorabajo d-flex flex-column align-items-center justify-content-center p-5 text-center">
                         <h1>HBASICSPORT</h1>
                         <p>Registrate ahora en la mejor tienda online de ropa y accesorios de gimnasio.¡No te pierdas nuestra amplia selección de productos de alta calidad! Descubre las últimas tendencias en moda deportiva y eleva tu estilo en el gimnasio. Regístrate hoy y obtén descuentos exclusivos.</p>
@@ -72,52 +80,8 @@
     </main>
     <br>
     <br>
-    <footer class="container-fluid">
-        <footer class="py-5">
-          <div class="row">
-            <div class="col-4 col-md-1 mb-3">
-            </div>
-      
-            <div class="col-6 col-md-2 mb-3">
-                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/6016/6016314.png" alt="Foto logo" class="col-3  sombra"></a>
-              <ul class="nav flex-column ">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 linkfooter">Tienda</a></li>
-                <li class="nav-item mb-2"><a href="principal.html#informacion" class="nav-link p-0 linkfooter">Información</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 linkfooter">Ropa</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 linkfooter">Accesorios</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-6 col-md-2 mb-3">
-            </div>
-      
-            <div class="col-md-5 offset-md-1 mb-3">
-              <form>
-                <h5>Busca productos</h5>
-                <p>Encuentra cual es tu producto perfecto.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Escribe el nombre">
-                  <button class="btn btn-dark" type="button">Buscar</button>
-                </div>
-              </form>
-            </div>
-          </div>
-      
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p class="textoFooter">© 2023 HBASICSPORT-JOSE LUIS TARRAGA SEGURA-2DAW</p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram ifooter"></i></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook ifooter"></i></li>
-              <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter-x ifooter"></i></a></li>
-            </ul>
-          </div>
-        </footer>
+    <?php include "../views/footer.html"; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-      document.getElementById('inicioSesion').addEventListener('click',()=>{
-        sessionStorage.setItem("iniciosesion","true");
-      })
-    </script>
+    <script src="../views/js/scriptiregistro.js"></script>
 </body>
 </html>

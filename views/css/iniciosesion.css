@@ -64,4 +64,13 @@
     background-color: rgb(187, 187, 187);
     color: black;
 }
-
+.mensaje-error{
+    background-color: rgba(255, 0, 0, 0.4);
+    color: rgb(255, 0, 0);
+    padding:  8px  0px 8px 0px;
+    text-align: center;
+    display: none;
+}
+.red{
+    color: red;
+}

@@ -46,6 +46,16 @@
     gap: 2vw;
     font-size: 1vw;
 }
+.botonesIniciado>a{
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    font-size: 1vw;
+}
+.botonesIniciado>a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
 .botonicono{
     background-color: rgba(0, 0, 0, 0);
     border: 0;
@@ -62,6 +72,13 @@
 .botones>a:not(.inicio):hover{
     color: rgb(36, 36, 36);
     text-decoration: underline;
+}
+.iconoPerfil{
+    font-size: 45px;
+    color: rgb(43, 43, 43);
+}
+.iconoPerfil:hover{
+    color: rgb(0, 0, 0);
 }
 .inicio{
     background-color: black;
@@ -94,7 +111,9 @@ i{
 .hueco{
     height: 6vw;
 }
-
+.rojo:hover, .rojo:hover>i{
+    color: red;
+}
 .imagenHombre{
     background-image: url('https://oleainfluenseller.com/cdn/shop/products/product-image-1423389228.jpg');
     background-position: top;
@@ -107,6 +126,7 @@ i{
     background-image: url('https://m.media-amazon.com/images/I/71GeLPOOAIL.jpg');
     background-position: center;
 }
+
 div[class*="imagen"]{
     height: 30vw;
     background-repeat: no-repeat;

@@ -1,0 +1,48 @@
+<dialog id="favDialog" class="dialog">
+    <div class="col-12 d-flex justify-content-end">
+      <button id="close" class="botoncross mt-2 me-3"><i class="bi bi-x-lg cross"></i></button>
+    </div>
+    <div class="row container">
+        <div class="col-5"></div>
+        <img src="https://cdn-icons-png.flaticon.com/512/6016/6016314.png" alt="Foto logo" class="col-2 h-100 sombra">
+        <div class="col-5"></div>
+    </div>
+    <div class="row container mt-2">
+      <div class="col-1"></div>
+      <h1 class="col-8">Inicio sesión</h1>
+    </div>
+    <form action="validar.php" method="post" id="formularioInicioSesion">
+      <!-- <div class="row container mt-2">
+        <div class="col-1"></div>
+        <label  class="col-11">Correo electronico:</label>
+      </div>-->
+      <div class="row container mt-4">
+        <div class="col-1"></div>
+        <input id="nombreCorreo" type="text" class="inputBonito w-75 col-11" placeholder="Correo electronico o dni" name="correoODni" required />
+      </div>
+      <!--<div class="row container mt-4">
+        <div class="col-1"></div>
+        <label  class="col-11">Contraseña:</label>
+      </div>-->
+      <div class="row container mt-3">
+        <div class="col-1"></div>
+        <input id="contraseña" type="password" class="inputBonito w-75 col-11" placeholder="Contraseña" name="pwd" required />
+      </div>
+      <div class="mt-4 d-flex justify-content-center container">
+        <p id="mensajeErrorId" class="w-75  mensaje-error "><i class="bi bi-x-circle red"></i> No existe usuario con esa identificación</p>
+        <p id="mensajeErrorPWD" class="w-75  mensaje-error "><i class="bi bi-x-circle red"></i> Contraseña es incorrecta</p>
+        <div class="col-1"></div>
+      </div>
+      <div class="row container mt-4">
+        <div class="col-1"></div>
+        <input  type="button" value="Iniciar sesión" class="col-11 w-75 me-2 botonInicioSesion" name="inicioSesion" id="botonInicio"/>
+      </div>
+    </form>
+    <div class="row container mt-2">
+      <p class="col-12 text-center olvidado">¿Has olvidado tu contraseña?<a href="" class="enlaceClicaaquí"> Clica aquí.</a></p>
+    </div>
+    <div class="row container mt-3 mb-4">
+      <div class="col-1"></div>
+      <p class="col-11 ">¿No tienes cuenta?<strong><a href="registrarse.php" class="enlaceRegistro"> Registráte.</a></strong></p>
+    </div>
+  </dialog>
