@@ -68,6 +68,17 @@ footer{
     color: rgb(0, 0, 0);
     text-decoration: underline;
 }
+.contrenedorErroresContraseña{
+    width: 75%;
+    display: none;
+    grid-template-columns: 50% 50%;
+}
+.red{
+    color: rgb(255, 33, 33);
+}
+.green{
+    color: rgb(0, 223, 0);
+}
 .input-container i {
     position: absolute;
     top: 50%;

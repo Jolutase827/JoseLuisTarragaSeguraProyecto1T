@@ -30,34 +30,59 @@
         <div class="row">
             <div class="col-12 col-md-6 pt-4 ">
                 <h1 class="row ms-5">Registrate</h1>
-                <form action="">
+                <form action="validar.php" method="post" id="formulario">
                     <div class="input-container row position-relative mt-4 ms-5">
                         <i class="fas fa-user"></i>
                         <input id="name" type="text" class="inputBonito w-75" placeholder="Nombre*" required/>
                     </div>
+                    <div class="row position-relative mt-3 ms-5 mb-1" id="errorNombre">
+                        
+                    </div>
                     <div class="input-container row position-relative mt-3 ms-5">
-                        <i class="fas fa-user"></i>
-                        <input id="lastname" type="text" class="inputBonito w-75 " placeholder="Apellido">
+                        <i class="bi bi-passport"></i>
+                        <input id="dni" type="text" class="inputBonito w-75 " placeholder="DNI*" name="dni" required/>
+                    </div>
+                    <div class="row position-relative mt-3 ms-5 mb-1" id="errorDNI">
+
                     </div>
                     <div class="input-container row position-relative mt-3 ms-5">
                         <i class="bi bi-house-fill"></i>
                         <input id="direccion" type="text" class="inputBonito w-75 " placeholder="Direccion*" required/>
                     </div>
+                    <div class="row position-relative mt-3 ms-5 mb-1" id="errorDireccion">
+                        
+                    </div>
                     <div class="input-container row position-relative mt-3 ms-5">
                         <i class="fas fa-envelope"></i>
                         <input id="email" type="email" class="inputBonito w-75 " placeholder="Correo electrónico*" required/>
                     </div>
+                    <div class="row position-relative mt-3 ms-5 mb-1" id="errorEmail">
+                        
+                    </div>
                     <div class="input-container row position-relative mt-3 ms-5" >
                         <i class="fas fa-lock"></i>
-                        <input id="pwd" type="password" class="inputBonito w-75 " placeholder="Contraseña*  " required/>
+                        <input id="pwd" type="password" class="inputBonito w-75 " placeholder="Contraseña*  " name="pwd" required/>
+                    </div>
+                    <div class="row position-relative mt-3 ms-5 contrenedorErroresContraseña" id="contrenedorErroresContraseña">
+                        <p id="caracteres" class="red"><i class="bi bi-x"></i> Mínimo 8 caracteres</p>
+                        <p id="mayuscula" class="red"><i class="bi bi-x"></i> Mínimo 1 mayúscula</p>
+                        <p id="minuscula" class="red"><i class="bi bi-x"></i> Mínimo 1 minuscula</p>
+                        <p id="numero" class="red"><i class="bi bi-x"> </i> Mínimo 1 número</p>
+                        <p id="especial" class="red"><i class="bi bi-x"></i> Mínimo 1 caracter especial</p>
                     </div>
                     <div class="input-container row position-relative mt-3 ms-5" >
                         <i class="fas fa-lock"></i>
                         <input id="rpwd" type="password" class="inputBonito w-75 " placeholder="Repite la contraseña*  " required/>
                     </div>
+                    <div class="row position-relative mt-3 ms-5 " id="errorRepetir">
+                        <p class="red"><i class="bi bi-x"></i> Las contraseñas no coinciden</p>
+                    </div>
                     <div class="row container mt-4 ms-5">
-                        <input type="submit" value="Registrate" class="col-11 w-75 me-2 botonRegistro">
-                      </div>
+                        <input id="bregistro" type="button" value="Registrate" class="col-11 w-75 me-2 botonRegistro">
+                    </div>
+                    <div class="row position-relative mt-3 ms-5 " id="errorCampos">
+                        <p class="red">Asegurate de haber rellenado todos los campos correctamente</p>
+                    </div>
                     </form>
                     <div class="row text-center w-75 ms-5">
                       <p class="mt-2 olvidado">¿Has olvidado tu contraseña?
@@ -83,5 +108,6 @@
     <?php include "../views/footer.html"; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="../views/js/scriptiregistro.js"></script>
+    <script src="../views/js/validatecontrasenya.js"></script>
 </body>
 </html>
