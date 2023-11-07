@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow&family=Bebas+Neue&family=Dancing+Script:wght@400;700&family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../views/css/registro.css">
+    <link rel="stylesheet" href="../views/css/footer.css">
     <title>Registrarse</title>
 </head>
 <body>

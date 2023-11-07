@@ -18,8 +18,15 @@ main{
     background-color: white;
     border-radius: 20px;
 }
-footer{
-    background-color: white;
+.inputBonito{
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: gray;
+    padding-left: 30px;
+} 
+.olvidado{
+    color: gray;
 }
 .contenedorDerecha{
     background-color: gray;
@@ -30,25 +37,6 @@ footer{
     background-color: gray;
     color: white;
     border-radius: 0px 0px 20px 20px;
-}
-.linkfooter{
-    color: rgb(56, 56, 56);
-}
-.linkfooter:hover{
-    color: black;
-}
-.linkfooter:active{
-    text-decoration: underline;
-}
-.inputBonito{
-    font-size: 20px;
-    border-radius: 10px;
-    border: solid 1px;
-    border-color: gray;
-    padding-left: 30px;
-} 
-.olvidado{
-    color: gray;
 }
 .botonRegistro{
     font-size: 22px;

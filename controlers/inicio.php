@@ -4,4 +4,6 @@ if (isset($_COOKIE["dni"])&&isset($_COOKIE['nombre']))
 else
     $iniciado = false;
 
+$home=true;
+
 include("../views/principal.php");

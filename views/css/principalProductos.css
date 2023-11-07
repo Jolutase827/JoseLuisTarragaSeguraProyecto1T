@@ -1,0 +1,48 @@
+main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.filtros{
+   border: solid 1px;
+    grid-row: 1 / 3;
+    height: 650px;
+}
+.buscador{
+    padding-left: 10px;
+    position: relative;
+    height: 10%;
+}
+.buscador-input {
+    width: 100%;
+    padding-left: 30px; 
+}
+.icono-buscar {
+    position: absolute;
+    left: 15px;
+    top: 5%;
+}
+.productos{
+    margin-top: 2px;
+    margin-left: 20px;
+    min-height: 650px;
+}
+.producto{
+    background-color: white;
+    height: 350px;
+    filter: drop-shadow(0.3vw 0.1vw 0.4vw rgb(163, 163, 163));
+}
+.producto>img{
+    width: 100%;
+    height: 80%;
+}
+.producto>a,.producto>p{
+    margin-top: 2px;
+    margin-left: 3px;
+}
+.producto>p{
+    color: gray;
+}

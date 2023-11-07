@@ -1,0 +1,28 @@
+.linkfooter{
+    color: rgb(56, 56, 56);
+}
+.linkfooter:hover{
+    color: black;
+}
+.linkfooter:active{
+    text-decoration: underline;
+}
+.botonesTipos{
+    background-color: white;
+}
+.botonesTipos4{
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+.textoFooter{
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+.ifooter{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+footer{
+    background-color: rgb(177, 177, 177);
+}

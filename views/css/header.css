@@ -1,0 +1,105 @@
+.sombra{
+    filter: drop-shadow(0.3vw 0.1vw 0.4vw rgb(163, 163, 163));
+}
+.h1size{
+    color: rgb(15, 15, 15);
+    font-family: 'Bebas Neue', sans-serif;
+}
+.inicioMenu{
+    position: absolute;
+    bottom: 20px;
+    background-color: black;
+    border-radius: 0.7vw;
+    text-align: center;
+    color: white;
+    text-decoration: none;   
+    border: 0;
+}
+
+.inicioMenu:hover{
+    background-color: rgb(65, 65, 65);
+     
+}
+.enlacesMenu{
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+    padding: 4px;
+}
+.enlacesMenu:hover{
+    background-color: rgb(194, 194, 194);
+    color: black;
+}
+.enlacesMenu:active{
+    text-decoration: underline;
+}
+.botones{
+    background-color: rgb(161, 161, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    font-size: 1vw;
+}
+.botonesIniciado>a{
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    font-size: 1vw;
+}
+.botonesIniciado>a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+.botonicono{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    font-size: 30px;
+}
+.botones>a:not(.inicio){
+    color: rgb(53, 53, 53);
+    background-color: rgb(161, 161, 161);
+    text-decoration: none;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    padding-left: 1vw;
+}
+.botones>a:not(.inicio):hover{
+    color: rgb(36, 36, 36);
+    text-decoration: underline;
+}
+
+
+.iconoPerfil{
+    font-size: 45px;
+    color: rgb(43, 43, 43);
+}
+.iconoPerfil:hover{
+    color: rgb(0, 0, 0);
+}
+.inicio{
+    background-color: black;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    border-radius: 0.7vw;
+    border: 0;
+    width: 7vw;
+    text-align: center;
+    color: white;
+    text-decoration: none;   
+}
+.btn-dark{
+    background-color: black;
+    border: black;
+}
+.inicio:hover{
+    background-color: rgb(44, 44, 44);
+    transition: 0.4s;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+i{
+    color: black;
+}
