@@ -51,16 +51,7 @@ CREATE TABLE `clientes` (
   `administrador` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Volcado de datos para la tabla `clientes`
---
 
-INSERT INTO `clientes` (`dniCliente`, `nombre`, `direccion`, `email`, `pwd`, `administrador`) VALUES
-('11234233F', 'Jose Luis', 'mi casa', 'tuemail@ermail.cacao', '$2y$10$ukBeDyqqbKsje5phzk9pmuzXOOBnJ9H0EfMcBYCmvtqFqChmc.Dza', ''),
-('12331231J', 'Jose', 'Mi casita', 'micorreo@esoes.com', '$2y$10$DVbdHDgP6NKezarzXJ/oruVx62Mim9kbgeseCryZxK0PCk5U5WO0O', ''),
-('21937634Z', 'Jose Luis', 'Mi Casa Al Lado', 'miemail@midominio.com', '$2y$10$NpvYeeCBSuydISQ64r3AtejWhYJCRWrvJ/0ZrLMHu.g4hzV6W9Ery', ''),
-('23412413F', 'paco', 'adasdsadasdad', 'addssadsa@dadsads.dasdad', '$2y$10$reRvFHSLzfT5XnW2cjGpa.Wpw9iYM1oNwd3BzLcwanTrf.XPf7xD2', ''),
-('31225456B', 'Paco', 'Mi paco', 'elpacos@paquirrin.xn--paquitio-j3a', '$2y$10$ww4tuGFo8sdCYankaN5VReA03bgGqt7SSMFK1Z1Gv1JW00Ey1yDXe', '');
 
 -- --------------------------------------------------------
 
