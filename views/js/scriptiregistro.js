@@ -60,7 +60,7 @@ boton.addEventListener('click',()=>{
             },
             body: JSON.stringify({"dniCliente":dni.value,"nombre":nombre.value,"direccion":direccion.value,"email":email.value,"pwd": pwd.value}),
         };
-        fetch('/JoseLuisTarragaSeguraProyecto1T/API/clienteService.php',options)
+        fetch('/JoseLuisTarragaSeguraProyecto1T/APICliente/clienteService.php',options)
         .then(response => response.json())
         .then(data=> {
             try{

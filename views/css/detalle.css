@@ -1,0 +1,65 @@
+.contenedorProducto{
+    background-color: rgb(197, 197, 197);
+    min-height: 575px;
+}
+.contenedorProducto>img{
+    height: 400px;
+}
+.formaNumero{
+    width: 35px;
+    text-align: center;
+}
+.stock{
+    position: absolute;
+}
+.stock{
+    top: 10%;
+}
+
+.cantidad>span{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 10px;
+}
+input{
+    border: 0;
+    
+}
+.cantidad{
+    height: fit-content;
+}
+.cantidad>span>strong{
+    padding: 4.5px;
+    padding-left: 10px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding-right: 10px;
+}
+.cantidad>span>strong:hover{
+    background-color: rgb(187, 187, 187);
+    border: 1px solid;
+}
+.rounded-left{
+    border-radius: 10px  0 0  10px;
+}
+.rounded-right{
+    border-radius: 0 10px 10px 0 ;
+}
+.botonAñadirCarrito, .botonAñadirCarrito>i{
+    color: white;
+}
+.botonAñadirCarrito{
+    background-color: black;
+}
+.botonAñadirCarrito:hover{
+    color: white;
+    background-color: rgb(41, 41, 41);
+}
+.imagenProducto{
+    height: 400px;
+}
+.nombreProducto{
+    text-decoration: underline;
+}

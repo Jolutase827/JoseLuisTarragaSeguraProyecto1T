@@ -34,7 +34,7 @@
                 <form action="validar.php" method="post" id="formulario">
                     <div class="input-container row position-relative mt-4 ms-5">
                         <i class="fas fa-user"></i>
-                        <input id="name" type="text" class="inputBonito w-75" placeholder="Nombre*" required/>
+                        <input id="name" type="text" class="inputBonito w-75" placeholder="Nombre*" name="nombre" required/>
                     </div>
                     <div class="row position-relative mt-3 ms-5 mb-1" id="errorNombre">
                         

@@ -8,7 +8,7 @@ const form = document.getElementById('formularioInicioSesion');
 botonInicio.addEventListener('click',()=>{
     mensajePWDmal.style.display = "none";
     mensajeIDmal.style.display = "none";
-    fetch(`/JoseLuisTarragaSeguraProyecto1T/API/clienteService.php?id=${dnioEmail.value}&pwd=${pwd.value}`)
+    fetch(`/JoseLuisTarragaSeguraProyecto1T/APICliente/clienteService.php?id=${dnioEmail.value}&pwd=${pwd.value}`)
     .then(response => response.json())
     .then(data=> {
             try{
@@ -17,6 +17,8 @@ botonInicio.addEventListener('click',()=>{
                 }else if(data=="pwdIncorrect"){
                     mensajePWDmal.style.display = "block";
                 }else{
+                    nombreCorreo.value = data['dniCliente'];
+                    pwd.value= data['nombre'];
                     form.submit();
                 }
             }catch(error){

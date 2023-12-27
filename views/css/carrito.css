@@ -1,0 +1,64 @@
+.contenedorProductos{
+    background-color: rgb(197, 197, 197);
+    min-height: 400px;
+}
+.contenedorProducto{
+    border-bottom: 1px solid;
+}
+.casiagotado{
+    border: 2px solid;
+    width: fit-content;
+    padding-right: 1px;
+}
+.cantidad{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 10px;
+    height: fit-content;
+}
+input{
+    border: 0;
+    width: 30px;
+    text-align: center;
+}
+.cantidad>strong{
+    padding: 4.5px;
+    padding-left: 10px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding-right: 10px;
+}
+.cantidad>strong:hover{
+    background-color: rgb(187, 187, 187);
+    border: 1px solid;
+}
+.rounded-left{
+    border-radius: 10px  0 0  10px;
+}
+.rounded-right{
+    border-radius: 0 10px 10px 0 ;
+}
+.botoncomprar, .botoncomprar>i{
+    color: white;
+}
+.botoncomprar{
+    background-color: black;
+}
+.botoncomprar:hover{
+    color: white;
+    background-color: rgb(41, 41, 41);
+}
+.animacionDeSombra{
+    padding: 2px;
+    border-radius: 10px;
+}
+.animacionDeSombra:hover{
+    transition: 0.2s;
+    background-color: red;
+}
+.animacionDeSombra:hover>i{
+    transition: 0.2s;
+    color: white;
+}

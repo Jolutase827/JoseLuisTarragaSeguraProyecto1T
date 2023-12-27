@@ -95,11 +95,28 @@
     transition: 0.4s;
 }
 header{
-    background-color: rgba(255, 255, 255, 0.8);
-    position: fixed;
+    background-color: rgba(255, 255, 255);
+    position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
+}
+.offcanvas-header,.offcanvas-body{
+    z-index: 0;
 }
 i{
     color: black;
+}
+.cantidadDeProductosCarrito{
+    background-color: rgb(0, 89, 255);
+    padding: 3px 5px 3px 5px;
+    color: white;
+}
+.cantidad-en-icono{
+    height: fit-content;
+    padding-bottom: 2px;
+}
+.idioma{
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
 }

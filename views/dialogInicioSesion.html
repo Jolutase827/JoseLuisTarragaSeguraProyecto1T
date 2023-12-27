@@ -12,25 +12,17 @@
       <h1 class="col-8">Inicio sesión</h1>
     </div>
     <form action="validar.php" method="post" id="formularioInicioSesion">
-      <!-- <div class="row container mt-2">
-        <div class="col-1"></div>
-        <label  class="col-11">Correo electronico:</label>
-      </div>-->
       <div class="row container mt-4">
         <div class="col-1"></div>
         <input id="nombreCorreo" type="text" class="inputBonito w-75 col-11" placeholder="Correo electronico o dni" name="dni" required />
       </div>
-      <!--<div class="row container mt-4">
-        <div class="col-1"></div>
-        <label  class="col-11">Contraseña:</label>
-      </div>-->
       <div class="row container mt-3">
         <div class="col-1"></div>
-        <input id="contraseña" type="password" class="inputBonito w-75 col-11" placeholder="Contraseña" name="pwd" required />
+        <input id="contraseña" type="password" class="inputBonito w-75 col-11" placeholder="Contraseña" name="nombre" required />
       </div>
       <div class="mt-4 d-flex justify-content-center container">
         <p id="mensajeErrorId" class="w-75  mensaje-error "><i class="bi bi-x-circle red"></i> No existe usuario con esa identificación</p>
-        <p id="mensajeErrorPWD" class="w-75  mensaje-error "><i class="bi bi-x-circle red"></i> Contraseña es incorrecta</p>
+        <p id="mensajeErrorPWD" class="w-75  mensaje-error"><i class="bi bi-x-circle red"></i> Contraseña es incorrecta</p>
         <div class="col-1"></div>
       </div>
       <div class="row container mt-4">

@@ -25,4 +25,5 @@
 }
 footer{
     background-color: rgb(177, 177, 177);
+    z-index: 7;
 }

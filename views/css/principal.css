@@ -28,7 +28,7 @@ div[class*="imagen"]{
     background-repeat: no-repeat;
     background-size: cover;
 }
-button[class*="botonesTipos"]{
+a[class*="botonesTipos"]{
     position: absolute;
     bottom: 1.5vw;
     left: 1.5vw;
